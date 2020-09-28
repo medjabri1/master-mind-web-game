@@ -12,145 +12,73 @@
     <div class="container">
 
         <div class="game">
-            <div class="game-display">
 
-                <div class="master-mind">
-                    <div class="row">
-                        <div class="circle blue"></div>
-                        <div class="circle yellow"></div>
-                        <div class="circle green"></div>
-                        <div class="circle red"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle brown"></div>
-                        <div class="circle grey"></div>
-                        <div class="circle black"></div>
-                        <div class="circle white"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
-                <div class="results">
-                    <div class="row">
-                        <div class="circle black"></div>
-                        <div class="circle white"></div>
-                        <div class="circle black"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                    <div class="row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
+            <div class="panel home-screen active">
+                <h2 class="title">Welcome to <span>Master-Mind</span></h2>
+                <img src="./assets/play.png" class="play-button" alt="play button icon">
+                <span class="help-button">How to play?</span>
             </div>
-            <div class="game-board">
 
-                <div class="game-info">
-                    <h2 class="game-title">Master-Mind</h2>
-                    <p class="attempts">Attempts remaining : <span class="attempts-remaining-nbr">8</span></p>
+            <div class="panel main-game">
+                <div class="game-display">
+                    <div class="master-mind"></div>
+                    <div class="results"></div>
                 </div>
-
-                <div class="game-play">
-
-                    <p>colors :</p>
-                    <div class="colors-list">
-                        <div class="color-item blue" title="blue"></div>
-                        <div class="color-item yellow" title="yellow"></div>
-                        <div class="color-item red" title="red"></div>
-                        <div class="color-item brown" title="brown"></div>
-                        <div class="color-item green" title="green"></div>
-                        <div class="color-item white" title="white"></div>
-                        <div class="color-item black" title="black"></div>
-                        <div class="color-item grey" title="grey"></div>
+                <div class="game-board">
+    
+                    <div class="game-info">
+                        <h2 class="game-title">Master-Mind</h2>
+                        <p class="attempts">Attempts remaining : <span class="attempts-remaining-nbr">8</span></p>
                     </div>
-
-                    <p>Current row :</p>
-                    <div class="current-row">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+    
+                    <div class="game-play">
+    
+                        <p>Colors :</p>
+                        <div class="colors-list"></div>
+    
+                        <p>Current row :</p>
+                        <div class="current-row"></div>
+    
+                        <span class="confirm-button">Confirm</span>
+    
                     </div>
-
-                    <span class="confirm-button">Confirm</span>
-
+    
                 </div>
-
             </div>
+
+            <div class="panel help-screen">
+                <h2 class="title">What to do?</h2>
+                <p>You have to guess the circles colors order generated by the computer in an exact amount of attempts!</p>
+                
+                <h2 class="title">Hints available?</h2>
+                <p>
+                    In the side panel of the game you will see a number of small cricles depending of number of colors chosen,
+                    <br>
+                    Black cirlce means that you have one circle with the right color and placed in the right place,
+                    <br>
+                    White cirlce means that you have ont cirlce with the right color but placed in the wrong place.
+                    <br>
+                    <br>
+                    For more difficulty, hints will be given just for distinct color, for example if you have two circles placed in the right place but they have the same color you will get just one black hint.
+                </p>
+
+                <span class="home-screen-button">Back</span>
+            </div>
+
+            <div class="panel won-screen">
+                <h2 class="title">You WON!</h2>
+                <img src="./assets/medal.png" class="won-icon" alt="WON medal icon">
+                <span class="home-screen-button">Home</span>
+                <span class="restart-button">Restart</span>
+            </div>
+
+            <div class="panel lose-screen">
+                <h2 class="title">You Lost!</h2>
+                <img src="./assets/sad.png" class="sad-icon" alt="Sadicon">
+                <span class="home-screen-button">Home</span>
+                <span class="restart-button">Restart</span>
+            </div>
+
         </div>
 
     </div>
